@@ -1,0 +1,43 @@
+<app-actor-listado (actorSeleccionado)="onActorSeleccionado($event)"></app-actor-listado>
+
+<div class="p-4 p-md-5 mb-4 rounded text-bg-dark" id="contenedor-absoluto">
+
+    <div id="contenedor-peliculas">
+        <div class="row">
+
+            <div class="col-md-4" id="row1">
+                    <h1 class="display-4 fst-italic" id="titulo-principal">Peliculas del actor</h1>
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                           
+                            <app-peliculas-del-actor [actorSeleccionado] = "this.actorClickeado"></app-peliculas-del-actor>
+                           
+                        </div>
+                    </div>
+            </div>
+            
+            <div class="col-md-4" id="row2">
+                <h1 class="display-4 fst-italic" id="titulo-principal">País del actor</h1>
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        
+                        <app-pais-del-actor [actorSeleccionado] = "this.actorClickeado"></app-pais-del-actor>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" id="row3">
+                <h1 class="display-4 fst-italic" id="titulo-principal">Detalles del actor</h1>
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+
+                        <app-detalles-del-actor [actorSeleccionado] = "this.actorClickeado"></app-detalles-del-actor>
+                    
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

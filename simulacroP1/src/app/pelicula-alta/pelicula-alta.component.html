@@ -1,0 +1,76 @@
+<div class="p-4 p-md-5 mb-4 rounded text-bg-dark" id="contenedor-absoluto">
+
+    <div class="row">
+
+        <div class="col-md-4" id="col1">
+            <h1 class="display-4 fst-italic" id="titulo-principal">Alta película</h1>
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                
+                <div class="col p-4 d-flex flex-column position-static">
+
+                    <form id="form-alta-pelicula">
+
+                        <div class="row">
+                            <div class="col g-0 overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                                <div class="mb-3"><input type="nombre" class="form-item" id="titulo" placeholder="Título" [(ngModel)]="titulo" [ngModelOptions]="{standalone: true}"></div>                          
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col g-0  overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                                <div class="mb-3"><input type="number" class="form-item" id="cantPublico" placeholder="Cantidad público" [(ngModel)]="cantidadPublico" [ngModelOptions]="{standalone: true}"></div>                          
+                            </div>
+                           
+                            <div class="col g-0  overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                                <input type="text"  class="form-item" readonly placeholder="Actor protagonista" [(ngModel)]="actorProtagonista" [ngModelOptions]="{standalone: true}">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col g-0  overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                                <textarea id="descripcion" [(ngModel)]="descripcion" [ngModelOptions]="{standalone: true}"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col g-0  overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                                <input type="text" id="fechaEstreno" placeholder="Fecha estreno" [(ngModel)]="fechaEstreno" [ngModelOptions]="{standalone: true}">
+                            </div>
+                            <div class="col g-0  overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                               <input type="file" accept="image/png,image/jpeg" class="form-item" id="file-input">
+                            </div>
+                        </div>
+                        
+                        <div class="col"> 
+                            <input type="radio" class="tipo-item" name="tipo" value="Amor">
+                            <label>Amor</label>
+                            <input type="radio" class="tipo-item" name="tipo" value="Terror">
+                            <label>Terror</label>
+                            <input type="radio" class="tipo-item" name="tipo" value="Comedia">
+                            <label>Comedia</label>
+                            <input type="radio" class="tipo-item" name="tipo" value="Otros" checked>
+                            <label>Otros</label>
+                        </div>
+
+                        <!-- <p color="dark" id="txtError" hidden>{{errorShowed}}</p> -->
+                        <button id="btn-crear" (click)="crearPelicula()"> C R E A R </button>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="col-md-4" id="col2">
+            <h1 class="display-4 fst-italic" id="titulo-principal">Actores</h1>
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" id="col-actores">
+                
+                <div class="col p-4 d-flex flex-column position-static">
+                   <app-tabla-actores (actorClickeado)="actorClickeadoEvent($event)"></app-tabla-actores>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>

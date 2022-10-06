@@ -1,0 +1,7 @@
+<ul id="lista-peliculas">
+    <li class="pelicula-item" *ngFor="let pais of arrayPeliculasDelActor; let i = index">
+            <p>
+               <label class="flag-pais">Película: {{arrayPeliculasDelActor[i].nombre}}</label>
+            </p>
+    </li>
+</ul>

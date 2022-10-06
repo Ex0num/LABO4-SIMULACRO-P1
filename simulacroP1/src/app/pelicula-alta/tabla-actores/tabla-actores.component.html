@@ -1,0 +1,7 @@
+<ul id="lista-actores">
+    <li class="actor-item" *ngFor="let actor of arrayActores; let i = index" (click)="actorClickeadoEvent(actor)">
+            <p>
+                <label class="nombre-actor">{{actor.nombre}} &ensp; {{actor.apellido}}</label>
+            </p>
+    </li>
+</ul>

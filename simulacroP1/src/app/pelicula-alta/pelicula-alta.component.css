@@ -1,0 +1,81 @@
+#contenedor-absoluto
+{
+    margin-top: 4rem;
+    height: 38rem;
+}
+
+#col1
+{
+    text-align: center;
+    width: 68%;
+}
+
+.row
+{
+    margin-bottom: -1rem;
+}
+
+#col2
+{
+    text-align: center;
+    width: 32%;
+}
+
+#form-alta-pelicula
+{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.form-item
+{
+    width: 85%;
+    border-radius: 6px;
+    font-weight: 400;
+}
+
+#descripcion
+{
+    border-radius: 10px;
+    max-width: 86%;
+    min-width: 86%;
+
+    max-height: 5rem;
+    min-height: 5rem;
+}
+
+#fechaEstreno
+{
+    width: 70%;
+    border-radius: 6px;
+    font-weight: 400;
+    margin-right: -4rem;
+}
+
+.tipo-item
+{
+    margin-left: 2rem;
+    margin-right: 0.3rem;
+    margin-bottom: 1.6rem;
+} 
+
+#col-actores
+{
+    height: 61%;
+}
+
+#btn-crear
+{
+    height: 2.5rem;
+    width: 95%;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: -1rem;
+    margin-bottom: 0.6rem;
+    background-color: #212529; 
+    color: white;
+    border:  1px solid white;
+}

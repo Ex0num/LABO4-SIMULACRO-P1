@@ -1,0 +1,13 @@
+<div class="col-md-4" id="col1-detalle" hidden>
+    <div id="data-pelicula-detalle">
+        <div class="row-md-4" id="row1-detalle"><label id="lbl-titulo-detalle">{{tituloPelicula}}</label></div>
+        <div class="row-md-4" id="row2-detalle"><img id="card-img-detalle" src="../../../assets/assets-peliculas/3-metros-sobre-el-cielo.jpg"></div>
+        <div class="row-md-4" id="row3-detalle"><label id="lbl-descripcion-detalle">{{descripcionPelicula}}</label></div>
+        <div class="row-md-4" id="row4-detalle">Tipo: <label id="lbl-tipo-detalle">{{tipoPeliculaDetalle}}</label></div>
+        <div class="row-md-4" id="row5-detalle">Fecha estreno: <label id="lbl-fechaEstreno-detalle">{{fechaEstreno}}</label></div>
+        <div class="row-md-4" id="row6-detalle">Cantidad publico: <label id="lbl-cantidadPublico-detalle">{{cantidadPublico}}</label></div> 
+    </div>
+    <button id="btn-limpiar" (click)="limpiarPelicula()"> L I M P I A R </button>
+</div>
+
+<label id="lbl-mensaje-temporal-detalle">Ninguna película fue seleccionada. Haga click en una para mostrarla.</label>

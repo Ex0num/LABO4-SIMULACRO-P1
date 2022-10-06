@@ -1,0 +1,30 @@
+#lista-actores
+{
+    height: 68.5%;
+    overflow: auto;
+    border: 1px solid white;
+    border-radius: 5px;
+    list-style: none;
+    text-align: left;
+}
+
+p
+{
+    margin-left: 1rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.actor-item
+{
+    margin-top: 1rem;
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 19px;
+}
+
+.actor-item:hover, .nombre-actor:hover
+{
+    background-color: rgb(47, 46, 46);
+    cursor: pointer;
+}
